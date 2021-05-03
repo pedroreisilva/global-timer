@@ -7,14 +7,14 @@ function countup() {
 
     const startPlaying = "1 Sept 2014";
     const startPlayingDate = new Date(startPlaying);
-    const currentDate = new Date();
+    const currentDate = new Date("4 May 2021");
 
     const totalSeconds = (currentDate - startPlayingDate) / 1000;
 
     const days = Math.floor(totalSeconds / 3600 / 24);
     const hours = Math.floor(totalSeconds / 3600) % 24;
-    const mins = Math.floor(totalSeconds / 60) % 60;
-    const seconds = Math.floor(totalSeconds) % 60;
+    const mins = 34;
+    const seconds = 15;
 
     daysEl.innerHTML = days;
     hoursEl.innerHTML = formatTime(hours);
